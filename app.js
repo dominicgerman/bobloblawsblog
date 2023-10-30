@@ -1,9 +1,17 @@
-const http = require("http");
+const express = require('express');
+const server = require('http').createServer();
+const app = express();
 
-http.createServer(function(req, res) {
-res.write("On the way to being a full snatch engineer.");
-res.end();
-}
-).listen(3000);
+app.get('/', function (req, res) {
+  res.sendFile('index.html', { root: __dirname });
+});
 
-console.log("server started on port 3000");
+app.get'/about', function (req, res) {
+  res.sendFile('about.html', { root: __dirname });
+});
+
+server.on('request', app);
+
+server.listen(3000, function () {
+  console.log('server started on port 3000');
+});
