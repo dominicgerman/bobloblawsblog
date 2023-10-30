@@ -6,8 +6,12 @@ app.get('/', function (req, res) {
   res.sendFile('index.html', { root: __dirname });
 });
 
-app.get'/about', function (req, res) {
+app.get('/about', function (req, res) {
   res.sendFile('about.html', { root: __dirname });
+});
+
+app.get('/styles.css', function (req, res) {
+  res.sendFile('styles.css', { root: __dirname });
 });
 
 server.on('request', app);
