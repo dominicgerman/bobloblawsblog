@@ -14,6 +14,14 @@ app.get('/styles.css', function (req, res) {
   res.sendFile('styles.css', { root: __dirname });
 });
 
+app.get('/about.jpg', function (req, res) {
+  res.sendFile('about.jpg', { root: __dirname });
+});
+
+app.get('/resume.pdf', function (req, res) {
+  res.sendFile('resume.pdf', { root: __dirname });
+});
+
 server.on('request', app);
 
 server.listen(3000, function () {
