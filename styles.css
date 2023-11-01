@@ -31,7 +31,7 @@ a {
 h1 {
   font-style: normal;
   font-weight: 500;
-  font-size: 4.4rem;
+  font-size: 4.2rem;
   line-height: 5.7rem;
   letter-spacing: -0.32px;
 }
@@ -301,7 +301,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 4rem;
 }
 
 .flexCenter {
